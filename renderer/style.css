@@ -1,0 +1,56 @@
+body {
+  background-color: #000;
+}
+body, div, img {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.moon {
+  position: fixed;
+  top: -25vw;
+  left: -25vw;
+  z-index: -2;
+}
+.moon img {
+  max-height: 1024px;
+  max-width: 1024px;
+  height: 75vw;
+  width: 75vw;
+  z-index: 2;
+}
+.controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 25px;
+  -webkit-app-region: drag;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.rocket {
+  z-index: 3;
+  position: fixed;
+  top: 20vw;
+  left: 20vw;
+  animation-name: rocket;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: left;
+  animation-timing-function: cubic-bezier(.81, .33, .29, .98);
+}
+.rocket.rocket-two {
+  top: 50vh;
+  left: 70vw;
+  animation-direction: reverse;
+}
+.rocket.rocket-two img {
+  transform: rotate(180deg);
+}
+@keyframes rocket {
+  from {
+    transform: rotate(0deg) scaleX(-1);
+  }
+  to {
+    transform: rotate(-360deg) scaleX(-1);
+  }
+}

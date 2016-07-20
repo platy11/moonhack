@@ -1,0 +1,17 @@
+{
+  "name": "platy11-moonhack-electron",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "platy11",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "moment": "^2.14.1",
+    "suncalc": "^1.7.0"
+  }
+}
